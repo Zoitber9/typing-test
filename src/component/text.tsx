@@ -1,5 +1,7 @@
 import {FunctionComponent, useEffect} from 'react';
 
+import '../styles/test.css'
+
 import {useAppDispatch, useAppSelector} from '../redux/hooks';
 import {fetchText, setText, setCurrentCharIndex, increasePressingCount, setMistakes} from '../redux/store/textSlice';
 import {setIsTimerOn} from '../redux/store/timerSlice';

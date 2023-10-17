@@ -10,6 +10,7 @@ import ModalWindow from './component/ui/modal/modal.tsx';
 import Button from './component/ui/button/button.tsx';
 import Select from './component/ui/select/select.tsx';
 import clsx from "clsx";
+import Header from "./component/ui/header/header.tsx";
 
 const App:FunctionComponent = () => {
     const dispatch = useAppDispatch();
@@ -28,6 +29,7 @@ const App:FunctionComponent = () => {
 
     return (
         <>
+            <Header/>
             <main className ={clsx('container', 'main')}>
                 {
                     isTestStarted
