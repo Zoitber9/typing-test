@@ -9,6 +9,7 @@ import Test from './component/test.tsx';
 import ModalWindow from './component/ui/modal/modal.tsx';
 import Button from './component/ui/button/button.tsx';
 import Select from './component/ui/select/select.tsx';
+import clsx from "clsx";
 
 const App:FunctionComponent = () => {
     const dispatch = useAppDispatch();
@@ -27,7 +28,7 @@ const App:FunctionComponent = () => {
 
     return (
         <>
-            <main className='container main'>
+            <main className ={clsx('container', 'main')}>
                 {
                     isTestStarted
                         ? <Test />

@@ -45,6 +45,7 @@ const Test:FunctionComponent = () => {
                     onFocus={(event) => event.target.blur()}
                 />
             </Stats>
+
             {
                 isTestFinished &&
                 <ModalWindow title='Test completed!'>

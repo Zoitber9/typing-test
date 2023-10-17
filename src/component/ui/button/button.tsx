@@ -11,7 +11,7 @@ const Button: FunctionComponent<ButtonProps> = ({btnText, ...props}) => {
 
     return (
         <button
-            className={clsx(s.uppercaseText, s.baseButton, s.darkButton)}
+            className ={clsx(s.uppercaseText, s.baseButton, s.darkButton)}
             {...props}
         >
             {btnText}

@@ -1,4 +1,4 @@
-.base-button {
+.baseButton {
     display: block;
     cursor: pointer;
     font-family: inherit;
@@ -10,22 +10,22 @@
     border-radius: 7px;
 }
 @media (min-width: 700px) {
-    .base-button {
+    .baseButton {
         padding: .7em 2em;
     }
 }
 
-.dark-button {
+.darkButton {
     color: var(--simple-white);
     background-color: var(--primary-dark);
     border: 2px solid transparent;
     transition : .2s linear;
 }
-.dark-button:hover {
+.darkButton:hover {
     color: var(--primary-dark);
     background-color: transparent;
     border: 2px solid var(--decor-color);
 }
-.dark-button:active {
+.darkButton:active {
     box-shadow: inset 2px 2px 5px 1px rgba(var(--primary-dark-rgb), .25);
 }
