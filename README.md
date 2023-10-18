@@ -1,27 +1,33 @@
-# React + TypeScript + Vite
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+### Typing Test
 
-Currently, two official plugins are available:
+Это приложение позволяет пользователям проверить свою скорость и точность печати. Пользователю предлагается набор текста, который нужно ввести с последующими результатами.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Typing Test позволяет пользователям создавать, просматривать, редактировать и удалять задачи. Основные функциональные возможности включают:
 
-## Expanding the ESLint configuration
+* Скорость: Приложение отображает скорость набора слов в минуту.
+* Точность: Приложение проверяет точность набора текста пользователя и отображает процент правильно введенных символов.
+* Результаты: Отображаются по ходу выполнения набора текста.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
 
-- Configure the top-level `parserOptions` property like this:
+## Технологии
+Проект Typing test разработан с использованием следующих технологий и инструментов:
 
-```js
-   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-   },
-```
+ * React
+ * Redux Toolkit
+ * Typescript
+ * Axios
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+  ## Запуск приложения
+Убедитесь, что у вас установлен Node.js на вашем компьютере.
+Склонируйте репозиторий с приложением или скачайте его архивом.
+В командной строке перейдите в директорию проекта.
+Установите зависимости, введя команду npm install.
+Запустите приложение с помощью команды npm start.
+Откройте браузер и перейдите по адресу http://localhost:3000, чтобы увидеть приложение Typing Test.
+
+## Контакты
+Если у вас возникли вопросы или предложения, вы можете связаться со мной по электронной почте: abramchik.andrey8312@gmail.com.
+
+
