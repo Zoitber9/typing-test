@@ -1,5 +1,3 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
 ### Typing Test
 
 Это приложение позволяет пользователям проверить свою скорость и точность печати. Пользователю предлагается набор текста, который нужно ввести с последующими результатами.
