@@ -5,7 +5,7 @@ import '../styles/stats.css';
 import { useAppDispatch, useAppSelector } from '../redux/hooks';
 import { increaseSeconds } from '../redux/store/timerSlice';
 
-import { speedCounting, accuracyCounting } from '../helpers/statsCounting';
+import { speedCounting, accuracyCounting } from '../utils/statsCounting';
 
 type StatsProps = {
     children?: JSX.Element | JSX.Element[];

@@ -7,7 +7,7 @@ import { resetSeconds } from '../redux/store/timerSlice';
 import { setIsTestFinished, resetTestState } from '../redux/store/testSlice';
 import { resetTextState, setText } from '../redux/store/textSlice';
 
-import { restoreText } from '../helpers/charTransform';
+import { restoreText } from '../utils/charTransform';
 
 import Text from './text.tsx';
 import Stats from './stats.tsx';

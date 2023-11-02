@@ -7,7 +7,7 @@ import {fetchText, setText, setCurrentCharIndex, increasePressingCount, setMista
 import {setIsTimerOn} from '../redux/store/timerSlice';
 import {setIsTestFinished} from '../redux/store/testSlice';
 
-import {getCurrentChar, compareChars} from '../helpers/charTransform';
+import {getCurrentChar, compareChars} from '../utils/charTransform';
 
 const Text: FunctionComponent = () => {
     const dispatch = useAppDispatch();
