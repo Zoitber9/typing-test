@@ -1,4 +1,4 @@
-import { FunctionComponent } from 'react';
+import {FunctionComponent, useState} from 'react';
 
 import '../styles/stats.css';
 
@@ -42,6 +42,11 @@ const Test:FunctionComponent = () => {
                 <Button
                     btnText='restart'
                     onClick={restart}
+                    onFocus={(event) => event.target.blur()}
+                />
+                <Button
+                    btnText='Choose difficult'
+                    onClick={newTest}
                     onFocus={(event) => event.target.blur()}
                 />
             </Stats>

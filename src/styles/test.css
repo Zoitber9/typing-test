@@ -22,6 +22,7 @@
     padding: 1em;
     border-radius: 7px;
     box-shadow: 0 0 10px 5px rgba(var(--decor-color-rgb), .25);
+    font-weight: 600;
 }
 @media (min-width: 700px) {
     .test-text-wrapper  {
