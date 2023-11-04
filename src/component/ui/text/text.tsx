@@ -1,15 +1,15 @@
 import {FunctionComponent, useEffect} from 'react';
 
-import '../styles/test.css'
+import 'src/component/ui/test/test.css'
 
-import {useAppDispatch, useAppSelector} from '../redux/hooks';
-import {fetchText, setText, setCurrentCharIndex, increasePressingCount, setMistakes} from '../redux/store/textSlice';
-import {setIsTimerOn} from '../redux/store/timerSlice';
-import {setIsTestFinished} from '../redux/store/testSlice';
+import {useAppDispatch, useAppSelector} from 'src/redux/hooks/hooks.ts';
+import {fetchText, setText, setCurrentCharIndex, increasePressingCount, setMistakes} from 'src/redux/store/textSlice.ts';
+import {setIsTimerOn} from 'src/redux/store/timerSlice.ts';
+import {setIsTestFinished} from 'src/redux/store/testSlice.ts';
 
-import {getCurrentChar, compareChars} from '../utils/charTransform';
+import {getCurrentChar, compareChars} from 'src/utils/charTransform.ts';
 
-const Text: FunctionComponent = () => {
+export const Text: FunctionComponent = () => {
     const dispatch = useAppDispatch();
     const text = useAppSelector(state => state.textSlice.text);
     const isLoading = useAppSelector(state => state.textSlice.isLoading);
@@ -26,7 +26,7 @@ const Text: FunctionComponent = () => {
     useEffect(() => {
         const newText = getCurrentChar(text, currentCharIndex);
         dispatch(setText(newText));
-    }, [dispatch, currentCharIndex]);
+    }, [dispatch]);
 
     useEffect(() => {
         if (pressingCount === 0 && text.length > 0) {
@@ -81,4 +81,3 @@ const Text: FunctionComponent = () => {
     );
 };
 
-export default Text;

@@ -2,10 +2,10 @@ import { FunctionComponent } from 'react';
 
 import './styles/typography.css';
 
-import { useAppSelector, useAppDispatch } from './redux/hooks';
+import { useAppSelector, useAppDispatch } from 'src/redux/hooks/hooks.ts';
 import { setIsTestStarted, setSentences } from './redux/store/testSlice';
 
-import Test from './component/test.tsx';
+import Test from 'src/component/ui/test/test.tsx';
 import ModalWindow from './component/ui/modal/modal.tsx';
 import Button from './component/ui/button/button.tsx';
 import Select from './component/ui/select/select.tsx';

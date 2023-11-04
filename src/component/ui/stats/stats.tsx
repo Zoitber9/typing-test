@@ -2,11 +2,11 @@ import { FunctionComponent, useState, useEffect } from 'react';
 
 import './stats.css';
 
-import { useAppDispatch, useAppSelector } from '../../../redux/hooks.ts';
-import { increaseSeconds } from '../../../redux/store/timerSlice.ts';
+import { useAppDispatch, useAppSelector } from 'src/redux/hooks/hooks.ts';
+import { increaseSeconds } from 'src/redux/store/timerSlice.ts';
 import {AiFillInfoCircle} from 'react-icons/ai'
 
-import { speedCounting, accuracyCounting } from '../../../utils/statsCounting.ts';
+import { speedCounting, accuracyCounting } from 'src/utils/statsCounting.ts';
 import {Tooltip} from "react-tooltip";
 
 type StatsProps = {
