@@ -7,12 +7,12 @@
 @media (min-width: 700px) {
     .test-container {
         flex-direction: row;
-        gap: 3em;
+        gap: 2em;
     }
 }
 @media (min-width: 1280px) {
     .test-container {
-        gap: 5em;
+        gap: 2em;
     }
 }
 

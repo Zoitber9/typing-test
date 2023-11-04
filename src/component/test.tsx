@@ -1,6 +1,6 @@
 import {FunctionComponent} from 'react';
 
-import '../styles/stats.css';
+import '../component/ui/stats/stats.css';
 
 import { useAppDispatch, useAppSelector } from '../redux/hooks';
 import { resetSeconds } from '../redux/store/timerSlice';
@@ -10,7 +10,7 @@ import { resetTextState, setText } from '../redux/store/textSlice';
 import { restoreText } from '../utils/charTransform';
 
 import Text from './text.tsx';
-import Stats from './stats.tsx';
+import Stats from './ui/stats/stats.tsx';
 import ModalWindow from './ui/modal/modal.tsx';
 import Button from './ui/button/button.tsx';
 

@@ -1,11 +1,13 @@
 import { FunctionComponent, useState, useEffect } from 'react';
 
-import '../styles/stats.css';
+import './stats.css';
 
-import { useAppDispatch, useAppSelector } from '../redux/hooks';
-import { increaseSeconds } from '../redux/store/timerSlice';
+import { useAppDispatch, useAppSelector } from '../../../redux/hooks.ts';
+import { increaseSeconds } from '../../../redux/store/timerSlice.ts';
+import {AiFillInfoCircle} from 'react-icons/ai'
 
-import { speedCounting, accuracyCounting } from '../utils/statsCounting';
+import { speedCounting, accuracyCounting } from '../../../utils/statsCounting.ts';
+import {Tooltip} from "react-tooltip";
 
 type StatsProps = {
     children?: JSX.Element | JSX.Element[];
@@ -40,7 +42,15 @@ const Stats:FunctionComponent<StatsProps> = ( {children} ) => {
         <div className='stats-container'>
             <div>
                 <p className='mid-header uppercase-text stat-title'>speed</p>
-                <p className='uppercase-text paragraph'>{speed} WPM</p>
+                <div className='uppercase-text paragraph'>
+                    {speed} WPM
+                    <span id={'wpm'}> <AiFillInfoCircle/> </span>
+                </div>
+                <Tooltip anchorSelect="#wpm" place="top">
+                  Words per seconds
+                </Tooltip>
+
+
             </div>
             <div>
                 <p className='mid-header uppercase-text stat-title'>accuracy</p>
